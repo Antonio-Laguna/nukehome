@@ -1,0 +1,13 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": "8000"
+  },
+  "database": {
+    "username": null,
+    "password": null,
+    "name": "nukehome",
+    "dialect": "sqlite",
+    "storage": "./content/data/nukehome.db"
+  }
+}

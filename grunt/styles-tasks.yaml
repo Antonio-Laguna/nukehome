@@ -1,0 +1,31 @@
+aliases:
+  - 'sass'
+  - 'autoprefixer'
+  - 'csso'
+sass:
+  options:
+    sourcemap: 'none'
+    style: 'expanded'
+  files:
+    '<%= ui %>/css/<%= package.name %>.css' : '<%= ui %>/scss/<%= package.name %>.scss'
+autoprefixer:
+  options:
+    browsers:
+      - 'last 2 versions'
+  src: '<%= ui %>/css/<%= package.name %>.css'
+  dest: '<%= ui %>/css/<%= package.name %>.css'
+csso:
+  files:
+    '<%= build %>/css/<%= package.name %>.css':
+      - '<%= bower %>/normalize.css/normalize.css'
+      - '<%= ui %>/css/<%= package.name %>.css'
+watch__sass:
+  files: '<%= ui %>/scss/**/*.scss'
+  options:
+    reload: false
+  tasks:
+    - 'styles'
+watch:
+  files: '<%= build %>/css/<%= package.name %>.css'
+  options:
+    reload: true

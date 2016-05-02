@@ -1,0 +1,23 @@
+{
+  "name": "nukehome",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Antonio Laguna <sombragriselros@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-material": "^1.0.7",
+    "angular-ui-router": "^0.2.18"
+  }
+}

@@ -1,0 +1,8 @@
+aliases:
+  - 'webpack'
+watch:
+  files: '<%= ui %>/js/**/*.js'
+  options:
+    reload: true
+  tasks:
+    - 'webpack'
